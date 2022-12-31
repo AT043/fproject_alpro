@@ -41,7 +41,7 @@ void menuAwal(int pilih) {
 		case 3 :
 			cout<<"Dudu info lokeran mazzsseh!"<<endl;
 			break;
-		default: cout<<"Yang bener dong mazzsehh!"<<endl;
+		default: cout<<"Silahkan pilih sesuai yang ada di daftar!"<<endl;
 		
 	}
 }
