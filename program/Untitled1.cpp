@@ -10,20 +10,21 @@ struct identity {
 
 struct tiket {
 	int hargaTiket[1001] = {30000, 40000, 20000, 20000, 35000};
-	int tglBrkt[1001] = {1,2};
-	int bulan[1001] = {1};
-	int tahun[2] = {2015};
+	string nominal[1001] = {"Rp 30.000", "Rp 40.000", "Rp 20.000", "Rp 20.000", "Rp 35.000"};
+	int tglBrkt[1001] = {1,2, 3, 4, 5, 6, 7, 8, 9, 10};
+	int bulan[1001] = {1, 2, 3, 4, 5, 6, 7 , 8, 9, 10, 11, 12};
+	int tahun = 2005;
 	string nomorKa[1001] = {"PA-302", "TT-333", "ZZ-201", "NT-203", "PA-304"};
 };
 
-/*struct jadwal {
+struct jadwal {
     string tujuan[1001] = {"Surabaya", "Jakarta", "Solo", "Yogya", "Malang"};
     string stasiun[1001] = {"Stasiun Gubeng", "Stasiun Gambir", "Stasiun Balapan", "Stasiun diYogya", "Stasiun diMalang"};
-    string 
-    double waktu[1001] = {10.19, 20.00, 2.00};
+    string waktu[1001] = {"10.00", "20.00", "12.15", "14.00", "16.30"};
+    struct identity customer;
     struct tiket tiketNya;
 };
-    kereta tiket;*/
+    jadwal pesanTiket;
     
 void welcome() {
 	cout<<" Selamat datang di sistem pemesanan tiket kereta \n";
@@ -82,7 +83,10 @@ int main() {
 			time();
 			thanks();
 		} else if(menu==2) {
-			cout<<"Nama dan No KA: TT-303 Ka Wilis Tujuan: xx Keberangkatan: 00"<<endl;
+			for (int i=0; i<5; i++) {
+				cout<<"Nama dan No KA: "<< pesanTiket.tiketNya.nomorKa[i] <<" Tujuan: "<<pesanTiket.tujuan[i] <<" Keberangkatan: 00"<<endl;
+			};
+			
 			thanks();
 		} else if(menu==3) {
 			cout<<"Blong"<<endl;
