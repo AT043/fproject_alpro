@@ -84,7 +84,7 @@ int main() {
 			thanks();
 		} else if(menu==2) {
 			for (int i=0; i<5; i++) {
-				cout<<"Nama dan No KA: "<< pesanTiket.tiketNya.nomorKa[i] <<" Tujuan: "<<pesanTiket.tujuan[i] <<" Keberangkatan: 00"<<endl;
+				cout<<"Nama dan No KA: "<< pesanTiket.tiketNya.nomorKa[i] <<" Tujuan: "<<pesanTiket.tujuan[i] <<"-"<<pesanTiket.stasiun[i]<<" Keberangkatan: "<< pesanTiket.waktu[i]<<endl;
 			};
 			
 			thanks();
