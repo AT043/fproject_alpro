@@ -296,8 +296,12 @@ int main() {
 		} else if(menu==3) {
 			cout<<"Belum Kepikiran"<<endl;
 			thanks();
+			system("pause");
+			system("cls");
 		} else {
-			cout<<"Masukkan Anda tidak dikenal, tolong pilih sesuai angka 1 - 3 sesuai di daftar!"<<endl;
+			cout<<"Masukkan Anda Salah! Pilih sesuai dengan list menu goblok!"<<endl;
+			system("pause");
+			system("cls");
 			
 		}
 	} while(back = true);
