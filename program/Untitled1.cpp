@@ -17,6 +17,7 @@ struct jadwal {
 	int tahun = 2023;
 	string namaKa[1001] = {"Sriwijaya", "Rajabasa", "Prabu Jaya", "Serelo", "Sindang Marga"};
 	string jenisKereta[1001] = {"Eksekutif Premium", "Ekonomi AC", "Eksekutif Bisnis", "Ekonomi AC", "Eksekutif Bisnis"};
+	int kapasitas[1001] = {100, 200, 200, 150, 200, 250};
     string tujuanPergi[1001] = {"Tanjungkarang(TNK)", "Kertapati(KPT)", "Kertapati(KPT)", "Kertapati(KPT)", "Lubuklinggau(LLG)"};
     string tujuanPulang[1001] = {"Kertapati(KPT)", "Tanjungkarang(TNK)", "Prabumulih(PBM)", "Lubuklinggau(LLG)", "Kertapati(KPT)"};
     string waktuPergi[1001] = {"10:00", "08:30", "12:15", "08:00", "19:45"};
@@ -110,8 +111,9 @@ int main() {
 						cout<<"Daftar Kereta: "<<endl;
 						cout<<endl;
 						cout<<pesanTiket.namaKa[0]<<"-"<<pesanTiket.jenisKereta[0]<<endl;
-						cout<<" Tanggal keberangkatan: "<<pesanTiket.tglBrkt[2]<<"-"<<pesanTiket.bulan[1]<<"-"<<pesanTiket.tahun<<endl;
-						cout<<" Waktu Keberangkatan: "<<pesanTiket.waktuPergi[0]<<endl;
+						cout<<"Kapasitas kereta: "<<pesanTiket.kapasitas[0]<<endl;
+						cout<<"Waktu tempuh dan lama perjalanan: "<<pesanTiket.waktuPergi[0]<<"-"<<pesanTiket.waktuSampai[0]<<" (6 Jam) "<<endl;
+						cout<<"Rute: "<<endl;
 						cout<<endl;
 						
 						cout<<pesanTiket.namaKa[1]<<"-"<<pesanTiket.jenisKereta[1]<<endl;
@@ -143,6 +145,8 @@ int main() {
 							cout<<"Pesan tiket?"<<endl;
 							cout<<"1. Ya"<<"  "<<"2. Tidak/kembali"<<endl;
 							cin>>tkt;
+							system("cls");
+							headerBar();
 							if(tkt==1) {
 								cout<<"Masukkan Nama Anda: "; 
 								cin.ignore(); getline(cin, pesanTiket.dataTiket.nama[0]);
@@ -166,7 +170,7 @@ int main() {
 						} else if(tgl%2==0) {
 							cout<<"Kereta tersedia: "<<endl;
 							cout<<pesanTiket.namaKa[1]<<"-"<<pesanTiket.jenisKereta[1]<<endl;
-							cout<<"Jadwal kereta: "<<pesanTiket.tglBrkt[tgl]<<"-"<<pesanTiket.bulan[bln-1]<<"-"<<pesanTiket.tahun<<endl;
+							cout<<"Jadwal kereta: "<<pesanTiket.tglBrkt[tgl-1]<<"-"<<pesanTiket.bulan[bln-1]<<"-"<<pesanTiket.tahun<<endl;
 							cout<<"Waktu keberangkatan: "<<pesanTiket.waktuPergi[1]<<endl;
 							cout<<"Waktu sampai: "<<pesanTiket.waktuSampai[1]<<endl;
 							cout<<endl;
@@ -176,6 +180,8 @@ int main() {
 							cout<<"Pesan tiket?"<<endl;
 							cout<<"1. Ya"<<"  "<<"2. Tidak/kembali"<<endl;
 							cin>>tkt;
+							system("cls");
+							headerBar();
 							if(tkt==1) {
 								cout<<"Masukkan Nama Anda: "; 
 								cin.ignore(); getline(cin, pesanTiket.dataTiket.nama[0]);
@@ -217,47 +223,7 @@ int main() {
 						cout<<endl;
 						border();	
 					}
-					/*int nka, tgl, bln;
-					cout<<"Pesan Tiket"<<endl;
-					cout<<"Pilih kereta: "<<endl; cin>>nka;
-						if(nka==1) {
-							cout<<"Masukkan tanggal dan bulan keberangkatan: "<<endl;
-							scanf("%d %d", &tgl, &bln); 
-							cout<<endl;
-							border();
-							cout<<"Kereta: "<<pesanTiket.namaKa[nka-1]<<endl;
-							cout<<"Jadwal Keberangkatan"<<pesanTiket.tglBrkt[tgl-1]<<"-"<<pesanTiket.bulan[bln-1]<<"-"<<pesanTiket.tahun<<endl;
-						} else if(nka==2) {
-							cout<<"Masukkan rencana keberangkatan: "<<endl;
-							cout<<"Tanggal: "; cin>>tgl; cout<<endl;
-							cout<<"Bulan: "; cin>>bln; cout<<endl;
-							
-							cout<<"Kereta: "<<pesanTiket.namaKa[nka-1]<<endl;
-							cout<<"Jadwal Keberangkatan"<<pesanTiket.tglBrkt[tgl-1]<<"-"<<pesanTiket.bulan[bln-1]<<"-"<<pesanTiket.tahun<<endl;
-						}
-					//cout<<"2. Masukkan tanggal: "<<endl;
-					//cout<<"3. Masukkan bulan: "<<endl;
-						system("cls");
-						headerBar();
-						if(pesen==1) {
-							cout<<"Masukkan Nama Anda: "<<endl;
-							cin.ignore();
-       						getline(cin, pesanTiket.dataTiket.nama[0]);
-							cout<<"Masukkan No Identitas Anda: "<<endl;
-							cin>>pesanTiket.dataTiket.noIdentitas[0];
-							cout<<"Masukkan email Anda: "<<endl;
-							cin>>pesanTiket.dataTiket.email[0];
-							cout<<"Masukkan jumlah tiket: "<<endl;
-							cin>>pesanTiket.dataTiket.jumlahTiket[0];
-							
-							border();
-							
-							cout<<"Nama: "<<pesanTiket.dataTiket.nama[0]<<endl;
-							cout<<"email: "<<pesanTiket.dataTiket.email[0]<<endl;
-							cout<<"No Identitas: "<<pesanTiket.dataTiket.noIdentitas[0]<<endl;
-							cout<<"Jumlah tiket: "<<pesanTiket.dataTiket.jumlahTiket[0]<<endl;
-							cout<<"Waktu cetak:"<<time()<<endl;
-						}*/
+					
 				break;
 			case 2 :
 				int selectB;
@@ -349,7 +315,7 @@ int main() {
 		
 			//time();
 			thanks();
-			system("pause");
+			//system("pause");
 			system("cls");
 			
 	/* 
@@ -415,8 +381,7 @@ int main() {
 		}
 	} while(back = true);
 	 
-	
-	
-	
+	system("pause");
 	return 0;
+	
 }
