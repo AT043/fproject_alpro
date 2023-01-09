@@ -4,7 +4,6 @@ using namespace std;
 
 struct tiket {
 	int hargaTiket[1001] = {50000, 35000, 30000, 30000, 35000};
-	//string nominal[1001] = {"Rp 50.000", "Rp 35.000", "Rp 30.000", "Rp 30.000", "Rp 35.000"};
 	string nama[1001];
 	int jumlahTiket[1001];
 	long long noIdentitas[1001];
@@ -179,6 +178,8 @@ int main() {
 								}
 								
 								
+							} else if(tkt==2) {
+								back = true;
 							}
 						
 					} else if(selectA==2) {
@@ -248,6 +249,8 @@ int main() {
 								border();
 								cout<<"Total harga = Rp"<<pesanTiket.dataTiket.hargaTiket[2]*pesanTiket.dataTiket.jumlahTiket[0]<<endl;
 					
+						} else if(tkt==2) {
+							back = true;
 						}
 						
 					} else if(selectA==3) {
@@ -319,6 +322,8 @@ int main() {
 									border();
 									cout<<"Total harga = Rp"<<pesanTiket.dataTiket.hargaTiket[4]*pesanTiket.dataTiket.jumlahTiket[0]<<endl;
 								}
+						} else if(tkt==2) {
+							back = true;
 						}
 				}
 				break;
@@ -397,6 +402,8 @@ int main() {
 								border();
 								cout<<"Total harga = Rp"<<pesanTiket.dataTiket.hargaTiket[2]*pesanTiket.dataTiket.jumlahTiket[0]<<endl;
 					
+						} else if(tkt==2) {
+							back = true;
 						}
 				}
 				 
@@ -481,6 +488,8 @@ int main() {
 								}
 								
 								
+							} else if(tkt==2) {
+								back=true;
 							}
 					}
 				break;
@@ -564,6 +573,8 @@ int main() {
 								}
 								
 								
+							} else if(tkt==2) {
+								back=true;
 							}
 					}
 				break;
@@ -594,10 +605,10 @@ int main() {
 			break;
 			case 6 :
 				back = true;
+			break;
 			default: cout<<"Silahkan pilih sesuai yang ada di daftar!"<<endl; back = true;
 			}
 		
-			//time();
 			thanks();
 			system("pause");
 			system("cls");
@@ -640,7 +651,8 @@ int main() {
 			}
 			
 			cout<<"\n";
-			cout<<"======================================================\n";
+			border();
+			cout<<"\n";
 			
 			int backButton;
 			cout<<"1. Kembali 2. Selesai"<<endl;
