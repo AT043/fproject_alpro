@@ -43,7 +43,7 @@ void menuAwal(int pilih) {
 
 void pilihStasiun(int choose) {
 	cout<<" Pilih Stasiun Keberangkatan: "<<endl;
-	cout<<"1. Kertapati(KPT)"<<endl<<"2. Prabumulih(PBM)"<<endl<<"3. Lubuklinggau(LLG)"<<endl<<"4. Tanjungkarang(TNK)"<<endl<<"5. Kembali"<<endl;
+	cout<<"1. Kertapati(KPT)"<<endl<<"2. Prabumulih(PBM)"<<endl<<"3. Lubuklinggau(LLG)"<<endl<<"4. Tanjungkarang(TNK)"<<endl<<"5. Cek harga tiket"<<endl<<"6. Kembali"<<endl;
 	cout<<endl;
 }
 
@@ -568,10 +568,32 @@ int main() {
 					}
 				break;
 			case 5 :
-				int selectE;
-				system("cls");
-				back = true;
+				int hTkt;
+				cout<<"Info harga tiket: "<<endl;
+				cout<<"\n";
+				
+				hTkt=0;
+				while(hTkt<5) {
+					cout<<hTkt+1<<"."<<pesanTiket.namaKa[hTkt]<<"-"<<pesanTiket.jenisKereta[hTkt]<<endl;
+					cout<<"  Rute: "<<pesanTiket.tujuanPulang[hTkt]<<"-"<<pesanTiket.tujuanPergi[hTkt]<<endl;
+					cout<<"  Kapasitas: "<<pesanTiket.kapasitas[hTkt]<<endl;
+					cout<<"  Harga tiket: Rp"<<pesanTiket.dataTiket.hargaTiket[hTkt]<<endl;
+					cout<<endl;
+					hTkt++;
+				}
+				border();
+					int backButton;
+					cout<<"1. kembali"<<"  "<<"2. Selesai"<<endl;
+					cin>>backButton;
+					if (backButton==1) {
+						back = true;
+					} else if(backButton==2) {
+						system("pause");
+						return 0;
+					}
 			break;
+			case 6 :
+				back = true;
 			default: cout<<"Silahkan pilih sesuai yang ada di daftar!"<<endl; back = true;
 			}
 		
