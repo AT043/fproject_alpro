@@ -178,7 +178,28 @@ int main() {
 									cout<<"Total harga = Rp"<<pesanTiket.dataTiket.hargaTiket[1]*pesanTiket.dataTiket.jumlahTiket<<endl;
 								}
 								
-								
+								border();
+								int payment;
+								cout<<"Pilih metode pembayaran: "<<endl;
+								cout<<"1. Bank Sumsel Babel"<<endl;
+								cout<<"2. Bank BNI"<<endl;
+								cout<<"3. Bank Mandiri"<<endl;
+								cout<<"4. Bank BRI"<<endl;
+								border();
+								cin>>payment;
+								if (payment==1) {
+									cout<<"kode institusi: 7000"<<endl;
+									cout<<"kode bayar: No. identitas Anda (16 digit)"<<endl;
+								} else if(payment==2) {
+									cout<<"kode institusi: 7000"<<endl;
+									cout<<"kode bayar: No. identitas Anda (16 digit)"<<endl;
+								} else if(payment==3) {
+									cout<<"kode institusi: 7000"<<endl;
+									cout<<"kode bayar: No. identitas Anda (16 digit)"<<endl;
+								} else if (payment==4) {
+									cout<<"kode institusi: 7000"<<endl;
+									cout<<"kode bayar: No. identitas Anda (16 digit)"<<endl;
+								} 
 								
 								thanks();
 								system("pause");
@@ -253,6 +274,31 @@ int main() {
 								border();
 								cout<<"Total harga = Rp"<<pesanTiket.dataTiket.hargaTiket[2]*pesanTiket.dataTiket.jumlahTiket<<endl;
 					
+								border();
+								int payment;
+								cout<<"Pilih metode pembayaran: "<<endl;
+								cout<<"1. Bank Sumsel Babel"<<endl;
+								cout<<"2. Bank BNI"<<endl;
+								cout<<"3. Bank Mandiri"<<endl;
+								cout<<"4. Bank BRI"<<endl;
+								border();
+								cin>>payment;
+								if (payment==1) {
+									cout<<"kode institusi: 7000"<<endl;
+									cout<<"kode bayar: No. identitas Anda (16 digit)"<<endl;
+								} else if(payment==2) {
+									cout<<"kode institusi: 7000"<<endl;
+									cout<<"kode bayar: No. identitas Anda (16 digit)"<<endl;
+								} else if(payment==3) {
+									cout<<"kode institusi: 7000"<<endl;
+									cout<<"kode bayar: No. identitas Anda (16 digit)"<<endl;
+								} else if (payment==4) {
+									cout<<"kode institusi: 7000"<<endl;
+									cout<<"kode bayar: No. identitas Anda (16 digit)"<<endl;
+								} 
+								
+							thanks();
+							system("pause");
 						} else if(tkt==2) {
 							back = true;
 						}
@@ -325,6 +371,30 @@ int main() {
 									time();
 									border();
 									cout<<"Total harga = Rp"<<pesanTiket.dataTiket.hargaTiket[4]*pesanTiket.dataTiket.jumlahTiket<<endl;
+									
+										border();
+								int payment;
+								cout<<"Pilih metode pembayaran: "<<endl;
+								cout<<"1. Bank Sumsel Babel"<<endl;
+								cout<<"2. Bank BNI"<<endl;
+								cout<<"3. Bank Mandiri"<<endl;
+								cout<<"4. Bank BRI"<<endl;
+								border();
+								cin>>payment;
+								if (payment==1) {
+									cout<<"kode institusi: 7000"<<endl;
+									cout<<"kode bayar: No. identitas Anda (16 digit)"<<endl;
+								} else if(payment==2) {
+									cout<<"kode institusi: 7000"<<endl;
+									cout<<"kode bayar: No. identitas Anda (16 digit)"<<endl;
+								} else if(payment==3) {
+									cout<<"kode institusi: 7000"<<endl;
+									cout<<"kode bayar: No. identitas Anda (16 digit)"<<endl;
+								} else if (payment==4) {
+									cout<<"kode institusi: 7000"<<endl;
+									cout<<"kode bayar: No. identitas Anda (16 digit)"<<endl;
+								} 
+								
 								} thanks();
 								system("pause");
 						} else if(tkt==2) {
@@ -407,6 +477,29 @@ int main() {
 								border();
 								cout<<"Total harga = Rp"<<pesanTiket.dataTiket.hargaTiket[2]*pesanTiket.dataTiket.jumlahTiket<<endl;
 							
+								border();
+								int payment;
+								cout<<"Pilih metode pembayaran: "<<endl;
+								cout<<"1. Bank Sumsel Babel"<<endl;
+								cout<<"2. Bank BNI"<<endl;
+								cout<<"3. Bank Mandiri"<<endl;
+								cout<<"4. Bank BRI"<<endl;
+								border();
+								cin>>payment;
+								if (payment==1) {
+									cout<<"kode institusi: 7000"<<endl;
+									cout<<"kode bayar: No. identitas Anda (16 digit)"<<endl;
+								} else if(payment==2) {
+									cout<<"kode institusi: 7000"<<endl;
+									cout<<"kode bayar: No. identitas Anda (16 digit)"<<endl;
+								} else if(payment==3) {
+									cout<<"kode institusi: 7000"<<endl;
+									cout<<"kode bayar: No. identitas Anda (16 digit)"<<endl;
+								} else if (payment==4) {
+									cout<<"kode institusi: 7000"<<endl;
+									cout<<"kode bayar: No. identitas Anda (16 digit)"<<endl;
+								} 
+								
 							thanks();
 							system("pause");
 						} else if(tkt==2) {
@@ -494,6 +587,29 @@ int main() {
 									cout<<"Total harga = Rp"<<pesanTiket.dataTiket.hargaTiket[3]*pesanTiket.dataTiket.jumlahTiket<<endl;
 								}
 								
+									border();
+								int payment;
+								cout<<"Pilih metode pembayaran: "<<endl;
+								cout<<"1. Bank Sumsel Babel"<<endl;
+								cout<<"2. Bank BNI"<<endl;
+								cout<<"3. Bank Mandiri"<<endl;
+								cout<<"4. Bank BRI"<<endl;
+								border();
+								cin>>payment;
+								if (payment==1) {
+									cout<<"kode institusi: 7000"<<endl;
+									cout<<"kode bayar: No. identitas Anda (16 digit)"<<endl;
+								} else if(payment==2) {
+									cout<<"kode institusi: 7000"<<endl;
+									cout<<"kode bayar: No. identitas Anda (16 digit)"<<endl;
+								} else if(payment==3) {
+									cout<<"kode institusi: 7000"<<endl;
+									cout<<"kode bayar: No. identitas Anda (16 digit)"<<endl;
+								} else if (payment==4) {
+									cout<<"kode institusi: 7000"<<endl;
+									cout<<"kode bayar: No. identitas Anda (16 digit)"<<endl;
+								} 
+								
 								system("pause");
 								thanks();
 							} else if(tkt==2) {
@@ -575,12 +691,35 @@ int main() {
 									cout<<"No Identitas: "<<pesanTiket.dataTiket.noIdentitas<<endl;
 									cout<<"Jumlah tiket: "<<pesanTiket.dataTiket.jumlahTiket<<endl;
 									cout<<"Nama Ka: "<<pesanTiket.namaKa[0]<<"-"<<pesanTiket.jenisKereta[0]<<endl;
-									cout<<"Jadwal keberangkatan: "<<pesanTiket.tujuanPulang[0]<<" ; "<<pesanTiket.tglBrkt[tgl-1]<<" "<<pesanTiket.bulan[bln-1]<<" "<<pesanTiket.tahun<<" ; "<<pesanTiket.waktuPergi[0]<<endl;
-									cout<<"Perkiraan tiba: "<<pesanTiket.tujuanPergi[0]<<" ; "<<pesanTiket.tglBrkt[tgl-1]<<" "<<pesanTiket.bulan[bln-1]<<" "<<pesanTiket.tahun<<" ; "<<pesanTiket.waktuSampai[0]<<endl;
+									cout<<"Jadwal keberangkatan: "<<pesanTiket.tujuanPergi[0]<<" ; "<<pesanTiket.tglBrkt[tgl-1]<<" "<<pesanTiket.bulan[bln-1]<<" "<<pesanTiket.tahun<<" ; "<<pesanTiket.waktuPergi[0]<<endl;
+									cout<<"Perkiraan tiba: "<<pesanTiket.tujuanPulang[0]<<" ; "<<pesanTiket.tglBrkt[tgl-1]<<" "<<pesanTiket.bulan[bln-1]<<" "<<pesanTiket.tahun<<" ; "<<pesanTiket.waktuSampai[0]<<endl;
 									time();
 									border();
 									cout<<"Total harga = Rp"<<pesanTiket.dataTiket.hargaTiket[0]*pesanTiket.dataTiket.jumlahTiket<<endl;
 								}
+								
+									border();
+								int payment;
+								cout<<"Pilih metode pembayaran: "<<endl;
+								cout<<"1. Bank Sumsel Babel"<<endl;
+								cout<<"2. Bank BNI"<<endl;
+								cout<<"3. Bank Mandiri"<<endl;
+								cout<<"4. Bank BRI"<<endl;
+								border();
+								cin>>payment;
+								if (payment==1) {
+									cout<<"kode institusi: 7000"<<endl;
+									cout<<"kode bayar: No. identitas Anda (16 digit)"<<endl;
+								} else if(payment==2) {
+									cout<<"kode institusi: 7000"<<endl;
+									cout<<"kode bayar: No. identitas Anda (16 digit)"<<endl;
+								} else if(payment==3) {
+									cout<<"kode institusi: 7000"<<endl;
+									cout<<"kode bayar: No. identitas Anda (16 digit)"<<endl;
+								} else if (payment==4) {
+									cout<<"kode institusi: 7000"<<endl;
+									cout<<"kode bayar: No. identitas Anda (16 digit)"<<endl;
+								} 
 								
 								system("pause");
 								thanks();
